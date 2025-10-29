@@ -1,8 +1,8 @@
 #  SQL Data Warehouse Project
 
 ## 📋 Project Overview
-This project is a complete **SQL Data Warehouse** built using **SQL Server**.  
-The goal was to design and implement a modern data warehouse, starting from raw data files, applying the **Bronze–Silver–Gold** architecture, and creating a clean, structured environment ready for reporting and analysis.
+This project is a complete **SQL Data Warehouse** built using SQL Server, followed by an **Exploratory Data Analysis (EDA)** performed directly on the Gold layer.  
+The goal was to design and implement a modern data warehouse using the **Bronze → Silver → Gold** architecture, prepare clean analytical data, and explore it using SQL to extract meaningful business insights.
 
 ---
 
@@ -11,7 +11,7 @@ The goal was to design and implement a modern data warehouse, starting from raw 
 - Build an organized **data architecture**  
 - Implement **ETL pipelines**  
 - Design an efficient **data model** using **fact** and **dimension tables**  
-- Prepare the data for further **analytics or BI dashboards**
+- Perform SQL-based EDA to understand business KPIs 
 
 ---
 
@@ -49,9 +49,33 @@ This structure supports efficient analytical queries and reporting.
 
 ---
 
-## 📊 Results
-By the end of the project, a fully functional **SQL Data Warehouse** was created.  
-It provides a clear and organized data flow, ready for connection to BI tools for visualization and further analysis.
+## 🔍 Exploratory Data Analysis (EDA)
+After building the Gold layer, I performed a focused SQL-based EDA to understand the data and extract insights.
+
+### EDA topics included:
+- **Database exploration** — overview of gold tables and structure  
+- **Dimension exploration** — countries, categories, customer attributes  
+- **Date exploration** — first/last order, date ranges, age distribution  
+- **Measures exploration** — total sales, avg price, total orders, quantities  
+- **Magnitude analysis** — totals by country, category, gender, etc.  
+- **Ranking analysis** — top/bottom products, top customers, top months
 
 ---
 
+## 📊 Results
+- A full end-to-end SQL Data Warehouse  
+- A Gold layer ready for BI tools and dashboards  
+- Key business metrics and insights extracted with SQL  
+
+---
+
+## 📁 Repository Structure
+
+datasets/ → Raw CSV source files
+documents/ → Project diagrams
+scripts/ → DDL & ETL scripts for Bronze/Silver/Gold
+tests/ → Data quality checks (SQL)
+eda/ → SQL queries for EDA (**Exploratory Data Analysis**)
+README.md → Project documentation
+
+---
