@@ -71,11 +71,11 @@ After building the Gold layer, I performed a focused SQL-based EDA to understand
 
 ## 📁 Repository Structure
 
-datasets/ → Raw CSV source files.
-documents/ → Project diagrams.
-scripts/ → DDL & ETL scripts for Bronze/Silver/Gold.
-tests/ → Data quality checks (SQL).
-eda/ → SQL queries for EDA (**Exploratory Data Analysis**).
-README.md → Project documentation.
+- datasets/ → Raw CSV source files
+- documents/ → Project diagrams
+- scripts/ → DDL & ETL scripts for Bronze/Silver/Gold
+- tests/ → Data quality checks (SQL)
+- eda/ → SQL queries for EDA (**Exploratory Data Analysis**)
+- README.md → Project documentation
 
 ---
