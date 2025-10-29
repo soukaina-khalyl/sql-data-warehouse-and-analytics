@@ -1,3 +1,16 @@
+/*
+==================================================================================
+Exploratory Data Analysis (EDA) on Gold Layer of the Data Warehouse
+==================================================================================
+
+This SQL script performs a structured exploration of the Gold layer tables
+(fact_sales, dim_customers, dim_products) to understand the data 
+and extract key business insights. 
+The script covers different types of analysis
+
+==================================================================================
+*/
+
 -------------------------------------------------- DATABASE EXPLORATION ---------------------------------
 
 -- Explore All Objects in the Database
