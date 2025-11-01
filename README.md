@@ -1,64 +1,107 @@
-#  SQL Data Warehouse Project
+# SQL Data Warehouse Project
 
 ## 📋 Project Overview
-This project is a complete **SQL Data Warehouse** built using SQL Server, followed by an **Exploratory Data Analysis (EDA)** performed directly on the Gold layer.  
-The goal was to design and implement a modern data warehouse using the **Bronze → Silver → Gold** architecture, prepare clean analytical data, and explore it using SQL to extract meaningful business insights.
+This project is a complete **SQL Data Warehouse** built with SQL Server, followed by **Exploratory Data Analysis (EDA)** and **Advanced Analytics** performed directly on the Gold layer.  
+The goal was to design a modern data warehouse using the **Bronze → Silver → Gold** architecture, prepare clean analytical data, and use SQL to extract business insights.
 
 ---
 
 ## 🧩 Objectives
-- Understand the full data warehousing process  
-- Build an organized **data architecture**  
-- Implement **ETL pipelines**  
-- Design an efficient **data model** using **fact** and **dimension tables**  
-- Perform SQL-based EDA to understand business KPIs 
+- Build an end-to-end SQL data warehouse  
+- Create a clear and structured data architecture  
+- Implement ETL pipelines  
+- Design a clean data model (fact + dimension tables)  
+- Perform SQL-based EDA and advanced analytics  
 
 ---
 
 ## 🏗️ Project Architecture
-The warehouse follows the **Bronze–Silver–Gold** structure:
+The warehouse follows the **Medallion Architecture**:
 
-- **Bronze Layer:** Raw data as extracted from the source (CSV files).  
-- **Silver Layer:** Cleaned and transformed data, standardized and validated.  
-- **Gold Layer:** Business-ready data modeled for reporting and analytical use.
+- **Bronze Layer:** Raw data loaded from CSV files  
+- **Silver Layer:** Cleaned, validated, and standardized data  
+- **Gold Layer:** Business-ready data prepared for reporting and analysis  
 
 ---
 
 ## ⚙️ Tools & Technologies
-- **SQL Server** – Main database environment  
-- **SQL** – For data manipulation, transformation, and modeling  
-- **CSV files** – Used as raw data sources  
+- **SQL Server**  
+- **SQL**  
+- **CSV files** as source data  
 
 ---
 
 ## 🔄 ETL Process
-The project includes an end-to-end **ETL pipeline**:
+The project includes a full ETL pipeline:
 
-1. **Extract** data from multiple CSV files.  
-2. **Transform** the data (cleaning, formatting, deduplication, validation).  
-3. **Load** the processed data into the warehouse, following the Bronze–Silver–Gold layers.  
+1. **Extract** data from CSV files  
+2. **Transform** using cleaning, formatting, validation, and deduplication  
+3. **Load** data into Bronze → Silver → Gold layers  
+
+Each step is implemented through SQL scripts saved in the repository.
 
 ---
 
 ## 🧮 Data Modeling
-The **data model** is designed using:
-- **Fact Tables** – Store quantitative data for analysis (e.g., sales, transactions).  
-- **Dimension Tables** – Contain descriptive attributes (e.g., customers, products, dates).  
+The final data model includes:
 
-This structure supports efficient analytical queries and reporting.
+- **Fact tables** — store numerical data such as sales and quantities  
+- **Dimension tables** — store descriptive information such as customers, products, and dates  
+
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
-After building the Gold layer, I performed a focused SQL-based EDA to understand the data and extract insights.
+After preparing the Gold layer, a full EDA was done using SQL to understand and explore the data.
 
-### EDA topics included:
-- **Database exploration** — overview of gold tables and structure  
-- **Dimension exploration** — countries, categories, customer attributes  
-- **Date exploration** — first/last order, date ranges, age distribution  
-- **Measures exploration** — total sales, avg price, total orders, quantities  
-- **Magnitude analysis** — totals by country, category, gender, etc.  
-- **Ranking analysis** — top/bottom products, top customers, top months
+Topics covered:
+- **Database structure exploration**  
+- **Dimension exploration**  
+- **Date analysis**  
+- **Measures exploration**  
+- **Magnitude analysis**  
+- **Ranking analysis**  
+
+All EDA scripts are available in the `exploratory_data_analysis/` folder.
+
+---
+
+## 📈 Advanced Analytics
+Advanced SQL techniques were used to answer deeper business questions.
+
+Included analyses:
+- **Sales performance over time** (yearly and monthly trends)  
+- **Cumulative analysis** (running totals)  
+- **Product performance comparison**  
+- **Category part-to-whole analysis**  
+- **Product segmentation** based on cost  
+- **Customer segmentation**  
+- **Customer report** summarizing main insights  
+
+All queries are available in the `sql_advanced_analytics/` folder.
+
+---
+
+## 📁 Repository Structure
+
+│
+├── datawarehouse/
+│   ├── datasets/         → Raw CSV files
+│   ├── documents/        → Project diagrams (architecture, data model…)
+│   ├── scripts/          → DDL + ETL scripts for Bronze, Silver, Gold
+│   └── tests/            → Data quality check scripts
+│
+├── eda/
+│   └── eda_queries.sql      → SQL scripts for Exploratory Data Analysis
+│
+├── advanced_analytics/
+│   ├── sales_analysis.sql
+│   ├── category_and_product_analysis.sql
+│   ├── customer_segmentation.sql
+│   └── customer_report.sql
+│
+└── README.md             → Main project documentation
+
 
 ---
 
@@ -66,16 +109,5 @@ After building the Gold layer, I performed a focused SQL-based EDA to understand
 - A full end-to-end SQL Data Warehouse  
 - A Gold layer ready for BI tools and dashboards  
 - Key business metrics and insights extracted with SQL  
-
----
-
-## 📁 Repository Structure
-
-- datasets/ → Raw CSV source files
-- documents/ → Project diagrams
-- scripts/ → DDL & ETL scripts for Bronze/Silver/Gold
-- tests/ → Data quality checks (SQL)
-- eda/ → SQL queries for EDA (**Exploratory Data Analysis**)
-- README.md → Project documentation
 
 ---
