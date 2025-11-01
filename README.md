@@ -84,23 +84,22 @@ All queries are available in the `sql_advanced_analytics/` folder.
 
 ## 📁 Repository Structure
 
-│
-├── datawarehouse/
-│   ├── datasets/         → Raw CSV files
-│   ├── documents/        → Project diagrams (architecture, data model…)
-│   ├── scripts/          → DDL + ETL scripts for Bronze, Silver, Gold
-│   └── tests/            → Data quality check scripts
-│
-├── eda/
-│   └── eda_queries.sql      → SQL scripts for Exploratory Data Analysis
-│
-├── advanced_analytics/
-│   ├── sales_analysis.sql
-│   ├── category_and_product_analysis.sql
-│   ├── customer_segmentation.sql
-│   └── customer_report.sql
-│
-└── README.md             → Main project documentation
+**datawarehouse/**
+- datasets/ : Raw CSV files
+- documents/ : Project diagrams (architecture, data model…)
+- scripts/ : DDL + ETL scripts for Bronze, Silver, Gold
+- tests/ : Data quality check scripts
+
+**eda/**
+- eda_queries.sql : SQL scripts for Exploratory Data Analysis
+
+**advanced_analytics/**
+- sales_analysis.sql
+- category_and_product_analysis.sql
+- customer_segmentation.sql
+- customer_report.sql
+
+**README.md**
 
 
 ---
